@@ -1,8 +1,9 @@
 .planes {
     background-color: var(--background-ceniza-claro);
-    
+
     padding-top: 3rem;
     padding-bottom: 3rem;
+    height: 1100px;
 }
 
 .planes__titulo {
@@ -20,6 +21,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 350px;
 }
 
 .tarjetas {
@@ -94,13 +96,41 @@
 }
 
 .tarjetas__boton--start {
-    border-color: var(--planes-card-start);
+    border: 1px solid var(--planes-card-start) !important;
 }
 
 .tarjetas__boton--ultra {
-    border-color: var(--planes-card-ultra);
+    border: 1px solid var(--planes-card-ultra) !important;
 }
 
 .tarjetas__boton--mega {
-    border-color: var(--planes-card-mega);
+    border: 1px solid var(--planes-card-mega) !important;
+}
+
+@media screen and (min-width: 1024px) {
+    .planes__tarjetas {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-top: 3rem;
+    }
+
+    .planes {
+        height: auto;
+    }
+
+    .tarjetas {
+        max-width: 400px;
+        width: 30%;
+    }
+
+    .tarjetas .tarjetas--ultra {
+        height: 400px !important;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .tarjetas {
+        max-width: 400px;
+    }
 }
