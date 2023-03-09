@@ -1,0 +1,9 @@
+.recetas {
+    max-width: 100vw;
+    background-color: #DAB997B2;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 5rem;
+    justify-content: space-evenly;
+    gap: 4rem;
+}
