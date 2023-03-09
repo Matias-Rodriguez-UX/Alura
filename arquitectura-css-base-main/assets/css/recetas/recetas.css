@@ -5,5 +5,25 @@
     flex-wrap: wrap;
     padding-top: 5rem;
     justify-content: space-evenly;
-    gap: 4rem;
+    padding-bottom: 5rem;
+}
+
+@media screen and (min-width:0) {
+    .recetas {
+        padding-left: 2rem;
+        padding-right: 2rem;
+        gap: 2rem;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .recetas {
+        gap: 3rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .recetas {
+        gap: 4rem;
+    }
 }

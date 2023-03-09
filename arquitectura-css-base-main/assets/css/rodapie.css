@@ -5,5 +5,18 @@
     padding-top: 5rem;
     padding-left: 5rem;
     padding-right: 5rem;
+}
 
+@media screen and (min-width:0) {
+    .rodapie {
+        flex-direction: column;
+        padding-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .rodapie {
+        flex-direction: row;
+    }
 }

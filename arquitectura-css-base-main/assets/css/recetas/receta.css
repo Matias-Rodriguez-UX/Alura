@@ -2,6 +2,26 @@
     background: #fdfdfd;
     display: flex;
     flex-direction: column;
-    margin-bottom: 4rem;
-    width: 25%;
+}
+
+@media screen and (min-width:0) {
+    .receta {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+
+}
+
+@media screen and (min-width:768px) {
+    .receta {
+        width: 33.33%;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .receta {
+        width: 25%;
+        margin-bottom: 4rem;
+    }
 }

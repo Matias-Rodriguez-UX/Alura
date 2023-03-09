@@ -8,5 +8,23 @@
 }
 
 @media screen and (min-width:0) {
-    .cabecera {}
+    .cabecera {
+        padding: 0 1rem;
+        justify-content: center;
+    }
+
+    .logo {
+        display: none;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .cabecera {
+        padding: 0 5rem;
+        justify-content: space-between;
+    }
+
+    .logo {
+        display: block;
+    }
 }
