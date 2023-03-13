@@ -1,4 +1,4 @@
-function intersection(arr1, arr2) {
+export default function intersection1(arr1, arr2) {
     // Tu código aquí
     let arrRes = []
     for (let i = 0; i < arr1.length; i++) {
@@ -11,7 +11,7 @@ function intersection(arr1, arr2) {
     return arrRes
 }
 
-function intersection(arr1, arr2) {
+export default function intersection2(arr1, arr2) {
     // Tu código aquí
     return arrRes = arr1.filter(el => {
         if (arr2.includes(el)) return el
@@ -21,7 +21,7 @@ function intersection(arr1, arr2) {
 }
 
 
-module.exports = intersection;
+
 
 //arrays ordenados:
 // console.log(intersection([1,2, 3, 5, 7, 10], [2, 3, 6, 8, 10, 20]))//[2, 3, 10];
@@ -32,7 +32,7 @@ module.exports = intersection;
 
 // console.log(intersection([7, 10, 3, 1, 5], [10, 6, 20, 3, 2, 8]))//[10,3])
 
-function SolveGraph(graph, start, target) {
+export default function SolveGraph(graph, start, target) {
     let visitados = new Set();
     let cola = [start];
     while (cola.length > 0) {
@@ -50,8 +50,6 @@ function SolveGraph(graph, start, target) {
     return false;
 }
 
-module.exports = SolveGraph;
-
 const graph = {
     a: ["c"], //pregunta x c y espera...
     b: ["c"],
@@ -66,7 +64,7 @@ const graph = {
 // console.log(SolveGraph(graph, "a", "d"))//true;
 // console.log(SolveGraph(graph, "s", "b"))//false;
 
-function HasBalancedBrackets(string) {
+export default function HasBalancedBrackets(string) {
     const stack = [];
     const brackets = {
         "(": ")",
@@ -74,8 +72,8 @@ function HasBalancedBrackets(string) {
         "{": "}"
     };
 
-    for (let i = 0; i < expresion.length; i++) {
-        const char = expresion[i];
+    for (let i = 0; i < string.length; i++) {
+        const char = string[i];
         if (brackets[char]) {
             // Si es un bracket de apertura, lo agregamos a la pila
             stack.push(char);
@@ -100,4 +98,3 @@ console.log(HasBalancedBrackets("{}"));
 // console.log(HasBalancedBrackets("{[("));//false
 // console.log(HasBalancedBrackets("{[([{()[]{}}])]}"));//true
 // console.log(HasBalancedBrackets("{[]}}"));//false
-module.exports = HasBalancedBrackets;
